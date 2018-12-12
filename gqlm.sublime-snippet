@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+const {${1/(.+)/\U$1/g}} = gql`
+	mutation {${1/(.+)/\U$1/g}}(
+		\$${2:variable}: String!
+	) {
+		createItem(
+			${2:variable}: \$${2:variable}
+		) {
+			id
+		}
+	}
+`;
+// Move this to the bottom
+export { {${1/(.+)/\U$1/g}} }
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>gqlm</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>

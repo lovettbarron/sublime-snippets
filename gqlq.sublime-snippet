@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+const ${1:ALLCAPS} = gql`
+	query ${1:ALLCAPS} {
+		${2:itemtoreturn} {
+			${2:properties}
+		}
+	}
+`;
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>gqlq</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>

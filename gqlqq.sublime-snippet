@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+<Query query={${1:ALLCAPS}}>
+	{({ data, error, loading }) => {
+		if (loading) return <p>Loading...</p>;
+		if (error) return <p>Error: {error.message}</p>;
+		return <p>Query {data.items.length}</p>;
+	}}
+</Query>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>gqlqq</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js meta.class.js meta.group.braces.curly.js meta.group.braces.round.js meta.jsx.js</scope>
+</snippet>
+
